@@ -1,5 +1,6 @@
 package com.tictactoe2.model;
 
+import com.tictactoe2.exception.EmptyCellException;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -25,7 +26,7 @@ public class AIPlayerTest {
   }
 
   @Test
-  public void shouldMakeMovementWithAIPlayer() {
+  public void shouldMakeMovementWithAIPlayer() throws EmptyCellException {
     gameBoard.applyCommand(new Command(0, 1, " "));
     gameBoard.applyCommand(new Command(0, 2, " "));
     gameBoard.applyCommand(new Command(2, 1, " "));
