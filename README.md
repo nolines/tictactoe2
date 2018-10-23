@@ -1,4 +1,5 @@
-<b>TicTacToe Command Line</b>
+<h2>TicTacToe Command Line</h2>
+<h3>!! Need to enable annotation processing and installed lombok plugin on intellij because of lombok dependency.</h3>
 
 To build project, the commend below should be executed.
 <pre>gradlew clean build</pre>
