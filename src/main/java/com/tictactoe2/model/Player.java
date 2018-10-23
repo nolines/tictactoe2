@@ -9,8 +9,10 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Player {
+public abstract class Player {
   private int id;
   private String name;
   private String mark;
+
+  public abstract Command makeMovement(GameBoard gameBoard);
 }

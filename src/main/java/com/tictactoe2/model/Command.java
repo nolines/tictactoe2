@@ -5,8 +5,8 @@ import lombok.Data;
 
 @AllArgsConstructor
 @Data
-public class Cell {
+public class Command {
   private int x;
   private int y;
-  private String value;
+  private String mark;
 }

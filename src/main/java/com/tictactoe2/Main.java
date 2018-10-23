@@ -1,7 +1,10 @@
 package com.tictactoe2;
 
 import com.tictactoe2.config.FileConfig;
-import com.tictactoe2.model.*;
+import com.tictactoe2.model.AIPlayer;
+import com.tictactoe2.model.HumanPlayer;
+import com.tictactoe2.model.Player;
+import com.tictactoe2.model.Setting;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,9 +14,6 @@ public class Main {
 
   public static void main(String[] args) {
     // SETTING UP GAME
-    AI computer = null;
-    computer = new AIPlayer();
-
     FileConfig fileConfig = new FileConfig();
     List<Setting> settings = fileConfig.readFromFile();
 
@@ -30,17 +30,15 @@ public class Main {
       throw new NumberFormatException();
     }
 
-    GameBoard gameBoard = new GameBoard();
-    gameBoard.setSize(size);
-    gameBoard.setSquares(new Cell[size][size]);
-
     List<Player> players = new ArrayList<>();
-    players.add(new Player(1, "Player1", "X"));
-    players.add(new Player(2, "Player2", "Y"));
-    players.add(new Player(3, "AI", "O"));
+    // User can easily change players to human or ai player to play with 2 human,1 ai or 3 human or
+    // 2 ai, 1 human or all ai.
+    players.add(new HumanPlayer(1, "Player1", "X"));
+    players.add(new HumanPlayer(2, "Player2", "Y"));
+    players.add(new AIPlayer(3, "AIPlayer", "O"));
 
     // GAME STARTS
-    Game game = new Game(size, players.get(0).getId(), players);
-    game.start(gameBoard, computer);
+    GameController game = new GameController(size, players);
+    game.start();
   }
 }

@@ -1,8 +1,6 @@
 package com.tictactoe2.model;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.util.Arrays;
@@ -11,49 +9,28 @@ import static java.lang.System.out;
 
 @Getter
 @Setter
-@NoArgsConstructor
-@AllArgsConstructor
 public class GameBoard {
-  private Cell[][] squares;
+  private String[][] squares;
   private int size;
 
+  public GameBoard(int size) {
+    this.size = size;
+    squares = new String[size][size];
+  }
+
   public final void clearBoard() {
-    for (Cell[] row : squares) {
-      Arrays.fill(row, Cell.BLANK);
+    for (String[] row : squares) {
+      Arrays.fill(row, " ");
     }
   }
 
-  public Cell getCell(int column, int row) {
+  public String getCell(int column, int row) {
     return squares[column][row];
   }
 
-  public Cell getCell(int[] cell) {
-    if (cell.length != 2) {
-      throw new IllegalArgumentException("Cells must have columns and rows.");
-    }
-
-    return getCell(cell[0], cell[1]);
-  }
-
-  public int[] intToCell(int cellNumber) {
-    int cell[] = {cellNumber / size, cellNumber % size};
-    return cell;
-  }
-
-  public void markCoordinate(int[] move, int currentPlayerId) {
-    switch (currentPlayerId) {
-      case 1:
-        squares[move[0]][move[1]] = Cell.X;
-        break;
-      case 2:
-        squares[move[0]][move[1]] = Cell.Y;
-        break;
-      case 3:
-        squares[move[0]][move[1]] = Cell.O;
-        break;
-
-      default:
-    }
+  public void applyCommand(Command command) {
+    squares[command.getX()][command.getY()] = command.getMark();
+    display();
   }
 
   public boolean verifyWinner(Player currentPlayer) {
@@ -64,7 +41,7 @@ public class GameBoard {
       count = 0;
 
       for (int y = 0; y < size; y++) {
-        if (this.getCell(x, y).getKey().equals(currentPlayer.getMark())) {
+        if (this.getCell(x, y).equals(currentPlayer.getMark())) {
           count++;
         }
       }
@@ -74,7 +51,7 @@ public class GameBoard {
     for (int y = 0; y < size; y++) {
       count = 0;
       for (int x = 0; x < size; x++) {
-        if (this.getCell(x, y).getKey().equals(currentPlayer.getMark())) {
+        if (this.getCell(x, y).equals(currentPlayer.getMark())) {
           count++;
         }
       }
@@ -83,7 +60,7 @@ public class GameBoard {
 
     count = 0;
     for (int x = 0; x < size; x++) {
-      if (this.getCell(x, x).getKey().equals(currentPlayer.getMark())) {
+      if (this.getCell(x, x).equals(currentPlayer.getMark())) {
         count++;
       }
     }
@@ -91,7 +68,7 @@ public class GameBoard {
     count = 0;
     int y = size - 1;
     for (int x = 0; x < size; x++) {
-      if (this.getCell(x, y - x).getKey().equals(currentPlayer.getMark())) {
+      if (this.getCell(x, y - x).equals(currentPlayer.getMark())) {
         count++;
       }
     }
@@ -100,7 +77,7 @@ public class GameBoard {
     count = 0;
     for (int x = 0; x < size; x++) {
       for (y = 0; y < size; y++) {
-        if (!this.getCell(x, y).getKey().equals(Cell.BLANK.getKey())) count++;
+        if (!this.getCell(x, y).equals(" ")) count++;
       }
     }
 
