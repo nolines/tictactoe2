@@ -7,6 +7,8 @@ import lombok.Setter;
 
 import java.util.Arrays;
 
+import static java.lang.System.out;
+
 @Getter
 @Setter
 @NoArgsConstructor
@@ -38,7 +40,7 @@ public class GameBoard {
     return cell;
   }
 
-  public void setMove(int[] move, int currentPlayerId) {
+  public void markCoordinate(int[] move, int currentPlayerId) {
     switch (currentPlayerId) {
       case 1:
         squares[move[0]][move[1]] = Cell.X;
@@ -109,5 +111,20 @@ public class GameBoard {
     }
 
     return false;
+  }
+
+  public void display() {
+    String b = "\n";
+    for (int i = 0; i < size; i++) {
+      for (int j = 0; j < size; j++) {
+        b += "|" + this.getSquares()[i][j];
+
+        if (j == size - 1) {
+          b += "|\n";
+        }
+      }
+    }
+
+    out.println(b);
   }
 }

@@ -43,11 +43,11 @@ public class Game {
         if (null == move) {
           out.println("Exit");
         } else {
-          gameBoard.setMove(move, currentPlayerId);
-          displayBoard(gameBoard);
+          gameBoard.markCoordinate(move, currentPlayerId);
+          gameBoard.display();
 
           // For 3 player its unnecessary to check winner every turn.
-          if (turns > 6) {
+          if (turns > players.size() * (boardSize - 1)) {
             winner = gameBoard.verifyWinner(getCurrentPlayer());
           }
 
@@ -56,7 +56,7 @@ public class Game {
       }
 
       if (winner) {
-        displayBoard(gameBoard);
+        gameBoard.display();
         out.println("Player" + (currentPlayerId - 1) + " won!!");
       } else {
         out.println("It was a tie.");
@@ -72,7 +72,6 @@ public class Game {
   }
 
   private void nextPlayerMove() {
-
     if (currentPlayerId == 1) {
       currentPlayerId = 2;
     } else if (currentPlayerId == 2) {
@@ -100,21 +99,6 @@ public class Game {
       }
     } while (!validTurn);
     return cell;
-  }
-
-  private void displayBoard(GameBoard gameBoard) {
-    String b = "\n";
-    for (int i = 0; i < boardSize; i++) {
-      for (int j = 0; j < boardSize; j++) {
-        b += "|" + gameBoard.getSquares()[i][j];
-
-        if (j == boardSize - 1) {
-          b += "|\n";
-        }
-      }
-    }
-
-    out.println(b);
   }
 
   private Player getCurrentPlayer() {
