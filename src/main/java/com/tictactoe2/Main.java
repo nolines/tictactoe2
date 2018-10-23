@@ -3,32 +3,28 @@ package com.tictactoe2;
 import com.tictactoe2.config.FileConfig;
 import com.tictactoe2.model.*;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 import java.util.stream.Collectors;
 
 public class Main {
 
-  public static void main(String[] args) throws IOException {
+  public static void main(String[] args) {
     // SETTING UP GAME
     AI computer = null;
     computer = new AIPlayer();
 
     FileConfig fileConfig = new FileConfig();
-    Map<String, String> settings = fileConfig.readFromFile();
+    List<Setting> settings = fileConfig.readFromFile();
 
-    int size = 3;
-
-//    int size =
-//        Integer.parseInt(
-//            settings
-//                .stream()
-//                .filter(item -> item.getKey().equals("battlefieldSize"))
-//                .collect(Collectors.toList())
-//                .get(0)
-//                .getValue());
+    int size =
+        Integer.parseInt(
+            settings
+                .stream()
+                .filter(item -> item.getKey().equals("battlefieldSize"))
+                .collect(Collectors.toList())
+                .get(0)
+                .getValue());
 
     if (size < 3 || size > 10) {
       throw new NumberFormatException();
