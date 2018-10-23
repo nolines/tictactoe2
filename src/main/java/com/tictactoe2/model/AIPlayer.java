@@ -1,5 +1,7 @@
 package com.tictactoe2.model;
 
+import com.tictactoe2.exception.EmptyCellException;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -13,7 +15,7 @@ public class AIPlayer extends Player {
   }
 
   @Override
-  public Command makeMovement(GameBoard gameBoard) {
+  public Command makeMovement(GameBoard gameBoard) throws EmptyCellException {
 
     List<String> emptyCells = new ArrayList<>();
 
@@ -26,7 +28,7 @@ public class AIPlayer extends Player {
     }
 
     if (emptyCells.isEmpty()) {
-      throw new IllegalStateException();
+      throw new EmptyCellException("There is no empty cell");
     }
 
     String emptyCell = emptyCells.get(generator.nextInt(emptyCells.size()));

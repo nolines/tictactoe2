@@ -82,7 +82,7 @@ public class GameBoard {
     }
 
     if (count == size * size) {
-      System.out.println(String.format("\nThere are no winners, the game ended in a draw. :/\n"));
+      System.out.println(String.format("\nThat is a TIE!\n"));
       System.exit(0);
       return false;
     }

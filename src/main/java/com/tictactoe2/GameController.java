@@ -1,5 +1,6 @@
 package com.tictactoe2;
 
+import com.tictactoe2.exception.EmptyCellException;
 import com.tictactoe2.model.Command;
 import com.tictactoe2.model.GameBoard;
 import com.tictactoe2.model.Player;
@@ -23,7 +24,7 @@ public class GameController {
     gameBoard = new GameBoard(boardSize);
   }
 
-  public void start() {
+  public void start() throws EmptyCellException {
     String playAgain;
     Player currentPlayer = null;
     gameBoard.clearBoard();

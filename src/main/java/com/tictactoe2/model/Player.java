@@ -1,5 +1,6 @@
 package com.tictactoe2.model;
 
+import com.tictactoe2.exception.EmptyCellException;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -14,5 +15,5 @@ public abstract class Player {
   private String name;
   private String mark;
 
-  public abstract Command makeMovement(GameBoard gameBoard);
+  public abstract Command makeMovement(GameBoard gameBoard) throws EmptyCellException;
 }

@@ -1,5 +1,6 @@
 package com.tictactoe2.config;
 
+import com.tictactoe2.exception.FileCouldNotReadException;
 import com.tictactoe2.model.Setting;
 import lombok.NoArgsConstructor;
 
@@ -12,7 +13,7 @@ public class FileConfig {
 
   private String configFile = "config.properties";
 
-  public List<Setting> readFromFile() {
+  public List<Setting> readFromFile() throws FileCouldNotReadException {
     Properties prop = new Properties();
     List<Setting> settings = new ArrayList<>();
 
@@ -26,7 +27,7 @@ public class FileConfig {
         settings.add(setting);
       }
     } catch (Exception ex) {
-      ex.printStackTrace();
+      throw new FileCouldNotReadException("File " + configFile + " could not be read");
     }
 
     return settings;
