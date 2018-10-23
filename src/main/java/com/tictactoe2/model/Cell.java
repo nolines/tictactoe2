@@ -1,6 +1,6 @@
 package com.tictactoe2.model;
 
-public enum CellState {
+public enum Cell {
   BLANK("BLANK", 0),
   X("X", 1),
   Y("Y", 2),
@@ -9,7 +9,7 @@ public enum CellState {
   private final String key;
   private final Integer value;
 
-  CellState(String key, Integer value) {
+  Cell(String key, Integer value) {
     this.key = key;
     this.value = value;
   }

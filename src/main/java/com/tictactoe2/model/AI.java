@@ -10,7 +10,7 @@ public abstract class AI {
     ArrayList<Integer> emptyCells = new ArrayList<>(size);
 
     for (int i = 0; i < size; i++) {
-      if (gameBoard.getCell(i / size, i % size) == CellState.BLANK) {
+      if (gameBoard.getCell(i / size, i % size) == Cell.BLANK) {
         emptyCells.add(i);
       }
     }

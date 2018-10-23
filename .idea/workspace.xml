@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc90f496-7aeb-4939-9c01-436de8c0804f" name="Default" comment="" />
+    <list default="true" id="dc90f496-7aeb-4939-9c01-436de8c0804f" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/tictactoe2/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/tictactoe2/Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/tictactoe2/model/GameBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/tictactoe2/model/GameBoard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tictactoe2/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tictactoe2/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tictactoe2/model/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tictactoe2/model/GameBoard.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -19,37 +27,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/tictactoe2/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-84">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Game.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/tictactoe2/Game.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="29">
-              <caret line="81" column="75" selection-start-line="81" selection-start-column="75" selection-end-line="81" selection-end-column="75" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1934#1935#0" expanded="true" />
-                <element signature="e#2007#2008#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="AI.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/tictactoe2/model/AI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="48">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Player.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tictactoe2/model/Player.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -57,8 +51,8 @@
       <file leaf-file-name="AIPlayer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/tictactoe2/model/AIPlayer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="176">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#165#166#0" expanded="true" />
@@ -71,22 +65,49 @@
       <file leaf-file-name="GameBoard.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/tictactoe2/model/GameBoard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="68" column="37" lean-forward="true" selection-start-line="68" selection-start-column="37" selection-end-line="68" selection-end-column="37" />
+            <state relative-caret-position="208">
+              <caret line="13" column="22" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#455#456#0" expanded="true" />
-                <element signature="e#492#493#0" expanded="true" />
+                <element signature="method#clearBoard#0;class#GameBoard#0" />
+                <element signature="e#476#477#0" expanded="true" />
+                <element signature="e#513#514#0" expanded="true" />
+                <element signature="method#getCell#1;class#GameBoard#0" />
+                <element signature="method#intToCell#0;class#GameBoard#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/tictactoe2/model/Player.java">
+      <file leaf-file-name="AITest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/tictactoe2/model/AITest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+            <state relative-caret-position="120">
+              <caret line="17" column="38" lean-forward="true" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tictactoe2/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="137">
+              <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tictactoe2/Game.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="139">
+              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -100,10 +121,20 @@
             <state relative-caret-position="32">
               <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
               <folding>
-                <element signature="e#289#290#0" expanded="true" />
-                <element signature="e#309#310#0" expanded="true" />
-                <element signature="e#339#340#0" expanded="true" />
-                <element signature="e#361#362#0" expanded="true" />
+                <element signature="e#291#292#0" expanded="true" />
+                <element signature="e#311#312#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tictactoe2/config/FileConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -127,6 +158,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -137,6 +169,9 @@
     <replaceStrings>
       <replace>size</replace>
     </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
@@ -529,12 +564,18 @@
         <option value="$PROJECT_DIR$/src/main/java/com/tictactoe2/config/FileConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tictactoe2/model/EasyAI.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tictactoe2/model/AIPlayer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tictactoe2/model/CellState.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tictactoe2/model/AI.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/tictactoe2/util/util.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/tictactoe2/GameTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tictactoe2/model/CellState.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/tictactoe2/model/GameBoardTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/tictactoe2/model/AIPlayerTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/tictactoe2/model/AITest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/config.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/tictactoe2/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tictactoe2/model/GameBoard.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tictactoe2/Game.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tictactoe2/model/Player.java" />
       </list>
     </option>
   </component>
@@ -545,10 +586,12 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="952" />
-    <option name="width" value="977" />
-    <option name="height" value="1038" />
+    <option name="x" value="1911" />
+    <option name="y" value="93" />
+    <option name="width" value="1938" />
+    <option name="height" value="1098" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -623,6 +666,17 @@
               <item name="tictactoe2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tictactoe2" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="Player.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
+            <path>
+              <item name="tictactoe2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tictactoe2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -635,6 +689,8 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com/tictactoe2" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -645,10 +701,17 @@
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.tictactoe2.model" />
+      <recent name="com.tictactoe2" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.tictactoe2.model" />
       <recent name="model" />
       <recent name="tictactoe2" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.tictactoe2.model" />
@@ -673,25 +736,112 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="tictactoe2_main" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.tictactoe2.Main" />
       <module name="tictactoe2_main" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="model.*" />
+          <option name="PATTERN" value="com.tictactoe2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="AITest.shouldGetEmptyCells" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tictactoe2_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tictactoe2.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.tictactoe2.model" />
+      <option name="MAIN_CLASS_NAME" value="com.tictactoe2.model.AITest" />
+      <option name="METHOD_NAME" value="shouldGetEmptyCells" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="GameBoardTest.shouldGetValueOfCell" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tictactoe2_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tictactoe2.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.tictactoe2.model" />
+      <option name="MAIN_CLASS_NAME" value="com.tictactoe2.model.GameBoardTest" />
+      <option name="METHOD_NAME" value="shouldGetValueOfCell" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="GameBoardTest.shouldReturnCellMovementWhenCallsWithCellNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tictactoe2_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tictactoe2.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.tictactoe2.model" />
+      <option name="MAIN_CLASS_NAME" value="com.tictactoe2.model.GameBoardTest" />
+      <option name="METHOD_NAME" value="shouldReturnCellMovementWhenCallsWithCellNumber" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="GameBoardTest.shouldReturnWinnerWhenVerifyWithAllXsInFirstRow" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tictactoe2_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tictactoe2.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.tictactoe2.model" />
+      <option name="MAIN_CLASS_NAME" value="com.tictactoe2.model.GameBoardTest" />
+      <option name="METHOD_NAME" value="shouldReturnWinnerWhenVerifyWithAllXsInFirstRow" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -732,13 +882,19 @@
       <listeners />
     </configuration>
     <list>
+      <item itemvalue="JUnit.GameBoardTest.shouldGetValueOfCell" />
+      <item itemvalue="JUnit.GameBoardTest.shouldReturnCellMovementWhenCallsWithCellNumber" />
+      <item itemvalue="JUnit.GameBoardTest.shouldReturnWinnerWhenVerifyWithAllXsInFirstRow" />
       <item itemvalue="Application.Main" />
-      <item itemvalue="Application.Main (1)" />
+      <item itemvalue="JUnit.AITest.shouldGetEmptyCells" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.AITest.shouldGetEmptyCells" />
+        <item itemvalue="JUnit.GameBoardTest.shouldReturnWinnerWhenVerifyWithAllXsInFirstRow" />
+        <item itemvalue="JUnit.GameBoardTest.shouldReturnCellMovementWhenCallsWithCellNumber" />
+        <item itemvalue="JUnit.GameBoardTest.shouldGetValueOfCell" />
       </list>
     </recent_temporary>
   </component>
@@ -752,15 +908,47 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1540232765778</updated>
-      <workItem from="1540232768414" duration="17315000" />
+      <workItem from="1540232768414" duration="24132000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="GameBoardTest_shouldReturnCellMovementWhenCallsWithCellNumber - 2018.10.23 at 03h 23m 49s.xml">
+      <configuration name="GameBoardTest.shouldReturnCellMovementWhenCallsWithCellNumber" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameBoardTest_shouldReturnCellMovementWhenCallsWithCellNumber - 2018.10.23 at 03h 23m 52s.xml">
+      <configuration name="GameBoardTest.shouldReturnCellMovementWhenCallsWithCellNumber" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameBoardTest_shouldReturnWinnerWhenVerifyWithAllXsInFirstRow - 2018.10.23 at 03h 27m 27s.xml">
+      <configuration name="GameBoardTest.shouldReturnWinnerWhenVerifyWithAllXsInFirstRow" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameBoardTest_shouldReturnWinnerWhenVerifyWithAllXsInFirstRow - 2018.10.23 at 03h 27m 35s.xml">
+      <configuration name="GameBoardTest.shouldReturnWinnerWhenVerifyWithAllXsInFirstRow" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameBoardTest_shouldReturnWinnerWhenVerifyWithAllXsInFirstRow - 2018.10.23 at 03h 27m 40s.xml">
+      <configuration name="GameBoardTest.shouldReturnWinnerWhenVerifyWithAllXsInFirstRow" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameBoardTest_shouldReturnWinnerWhenVerifyWithAllXsInFirstRow - 2018.10.23 at 03h 27m 49s.xml">
+      <configuration name="GameBoardTest.shouldReturnWinnerWhenVerifyWithAllXsInFirstRow" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AITest_shouldGetEmptyCells - 2018.10.23 at 11h 22m 33s.xml">
+      <configuration name="AITest.shouldGetEmptyCells" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AITest_shouldGetEmptyCells - 2018.10.23 at 11h 23m 51s.xml">
+      <configuration name="AITest.shouldGetEmptyCells" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AITest_shouldGetEmptyCells - 2018.10.23 at 11h 23m 53s.xml">
+      <configuration name="AITest.shouldGetEmptyCells" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AITest_shouldGetEmptyCells - 2018.10.23 at 11h 25m 15s.xml">
+      <configuration name="AITest.shouldGetEmptyCells" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17315000" />
+    <option name="totallyTimeSpent" value="24132000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="1913" y="95" width="1550" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" />
@@ -774,18 +962,18 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49932885" weight="0.32905984" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49932885" weight="0.35309973" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Messages" weight="0.32905984" />
       <window_info anchor="right" id="Palette&#9;" />
       <window_info id="Image Layers" />
       <window_info anchor="right" id="Capture Analysis" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.44444445" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4703504" />
+      <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2295302" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2295302" />
       <window_info anchor="bottom" id="SonarLint" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32905984" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32884097" />
       <window_info anchor="right" id="Gradle" />
       <window_info anchor="right" id="Theme Preview" />
       <window_info id="Favorites" side_tool="true" />
@@ -804,16 +992,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <condition expression="turns &gt; 5" language="JAVA" />
-          <url>file://$PROJECT_DIR$/src/main/java/com/tictactoe2/Game.java</url>
-          <line>46</line>
-          <properties />
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="31" />
+      <option name="time" value="46" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -883,6 +1062,11 @@
     </expressions>
     <expressions id="breakpointCondition">
       <expression>
+        <expression-string>turns == 7</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
         <expression-string>turns &gt; 5</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
@@ -890,47 +1074,47 @@
     </expressions>
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>this.getCell(x,y).getKey().equals(currentPlayer.getMark())</expression-string>
+        <expression-string>gameBoard.getCell(3 / size, 3 % size)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>currentPlayer.getMark()</expression-string>
+        <expression-string>gameBoard.getCell(3 / size, 0 % size)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>this.getCell(x,y).getKey()</expression-string>
+        <expression-string>gameBoard.getCell(2 / size, 0 % size)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>this.getCell(x,y).getValue().toString()</expression-string>
+        <expression-string>gameBoard.getCell(4 / size, 0 % size)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>this.getCell(x,y).getValue().toString().equals(currentPlayer.getMark())</expression-string>
+        <expression-string>gameBoard.getCell(1 / size, 0 % size)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>this.getCell(x,y).getValue().equals(currentPlayer.getMark())</expression-string>
+        <expression-string>gameBoard.getCell(0 / size, 1 % size)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>this.getCell(x,y).value.equals(currentPlayer.getMark())</expression-string>
+        <expression-string>gameBoard.getCell(0 / size, 0 % size)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>this.getCell(x,y).equals(currentPlayer.getMark().value)</expression-string>
+        <expression-string>intCell[1]</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>this.getCell(x,y)</expression-string>
+        <expression-string>intCell[2]</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -1042,23 +1226,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tictactoe2/model/CellState.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/util/List.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        <state relative-caret-position="155">
+          <caret line="543" column="6" selection-start-line="543" selection-start-column="6" selection-end-line="543" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/tictactoe2/GameTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
           <folding>
-            <element signature="e#289#290#0" expanded="true" />
-            <element signature="e#309#310#0" expanded="true" />
-            <element signature="e#339#340#0" expanded="true" />
-            <element signature="e#361#362#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tictactoe2/config/FileConfig.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/tictactoe2/model/AIPlayerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="144">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/tictactoe2/util/util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/tictactoe2/model/GameBoardTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-376">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/tictactoe2/model/AITest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="17" column="38" lean-forward="true" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1075,24 +1290,80 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tictactoe2/config/FileConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tictactoe2/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="17" selection-start-column="17" selection-end-column="17" />
+        <state relative-caret-position="48">
+          <caret line="3" column="19" lean-forward="true" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tictactoe2/model/CellState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+          <folding>
+            <element signature="e#291#292#0" expanded="true" />
+            <element signature="e#311#312#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tictactoe2/model/GameBoard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="13" column="22" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#clearBoard#0;class#GameBoard#0" />
+            <element signature="e#476#477#0" expanded="true" />
+            <element signature="e#513#514#0" expanded="true" />
+            <element signature="method#getCell#1;class#GameBoard#0" />
+            <element signature="method#intToCell#0;class#GameBoard#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tictactoe2/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tictactoe2/model/AI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="48">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tictactoe2/model/AIPlayer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="176">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#165#166#0" expanded="true" />
@@ -1101,53 +1372,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/util/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="543" column="6" selection-start-line="543" selection-start-column="6" selection-end-line="543" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tictactoe2/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-84">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tictactoe2/model/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        <state relative-caret-position="160">
+          <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tictactoe2/model/GameBoard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="68" column="37" lean-forward="true" selection-start-line="68" selection-start-column="37" selection-end-line="68" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#455#456#0" expanded="true" />
-            <element signature="e#492#493#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tictactoe2/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="81" column="75" selection-start-line="81" selection-start-column="75" selection-end-line="81" selection-end-column="75" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1934#1935#0" expanded="true" />
-            <element signature="e#2007#2008#0" expanded="true" />
           </folding>
         </state>
       </provider>

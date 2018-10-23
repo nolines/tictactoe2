@@ -12,20 +12,20 @@ import java.util.Arrays;
 @NoArgsConstructor
 @AllArgsConstructor
 public class GameBoard {
-  private CellState[][] squares;
+  private Cell[][] squares;
   private int size;
 
   public final void clearBoard() {
-    for (CellState[] row : squares) {
-      Arrays.fill(row, CellState.BLANK);
+    for (Cell[] row : squares) {
+      Arrays.fill(row, Cell.BLANK);
     }
   }
 
-  public CellState getCell(int column, int row) {
+  public Cell getCell(int column, int row) {
     return squares[column][row];
   }
 
-  public CellState getCell(int[] cell) {
+  public Cell getCell(int[] cell) {
     if (cell.length != 2) {
       throw new IllegalArgumentException("Cells must have columns and rows.");
     }
@@ -38,16 +38,16 @@ public class GameBoard {
     return cell;
   }
 
-  public void setMove(int[] move, int id) {
-    switch (id) {
-      case 0:
-        squares[move[0]][move[1]] = CellState.O;
-        break;
+  public void setMove(int[] move, int currentPlayerId) {
+    switch (currentPlayerId) {
       case 1:
-        squares[move[0]][move[1]] = CellState.X;
+        squares[move[0]][move[1]] = Cell.X;
         break;
       case 2:
-        squares[move[0]][move[1]] = CellState.Y;
+        squares[move[0]][move[1]] = Cell.Y;
+        break;
+      case 3:
+        squares[move[0]][move[1]] = Cell.O;
         break;
 
       default:
@@ -98,7 +98,7 @@ public class GameBoard {
     count = 0;
     for (int x = 0; x < size; x++) {
       for (y = 0; y < size; y++) {
-        if (!this.getCell(x, y).getKey().equals(CellState.BLANK.getValue())) count++;
+        if (!this.getCell(x, y).getKey().equals(Cell.BLANK.getKey())) count++;
       }
     }
 

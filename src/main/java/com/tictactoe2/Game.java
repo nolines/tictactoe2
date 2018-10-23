@@ -1,7 +1,7 @@
 package com.tictactoe2;
 
 import com.tictactoe2.model.AI;
-import com.tictactoe2.model.CellState;
+import com.tictactoe2.model.Cell;
 import com.tictactoe2.model.GameBoard;
 import com.tictactoe2.model.Player;
 
@@ -28,14 +28,13 @@ public class Game {
     String playAgain;
 
     gameBoard.clearBoard();
-    boolean playComputer = true;
 
     do {
       int[] move;
       boolean winner = false;
 
       for (int turns = 1; turns < boardSize * boardSize && !winner; turns++) {
-        if (turns % 3 == 0 && currentPlayerId == 0) {
+        if (turns % players.size() == 0 && currentPlayerId == 3) {
           move = computer.getMove(gameBoard, turns);
         } else {
           move = promptMove(gameBoard);
@@ -67,12 +66,20 @@ public class Game {
       playAgain = scanner.nextLine();
       if (playAgain.equalsIgnoreCase("y") || playAgain.equalsIgnoreCase("yes")) {
         gameBoard.clearBoard();
+        currentPlayerId = 1;
       }
     } while (playAgain.equalsIgnoreCase("y") || playAgain.equalsIgnoreCase("yes"));
   }
 
   private void nextPlayerMove() {
-    currentPlayerId = currentPlayerId < 2 ? currentPlayerId + 1 : 0;
+
+    if (currentPlayerId == 1) {
+      currentPlayerId = 2;
+    } else if (currentPlayerId == 2) {
+      currentPlayerId = 3;
+    } else if (currentPlayerId == 3) {
+      currentPlayerId = 1;
+    }
   }
 
   private int[] promptMove(GameBoard gameBoard) {
@@ -86,7 +93,7 @@ public class Game {
 
       if (cell[0] < 0 || cell[0] > boardSize || cell[1] < 0 || cell[1] > boardSize) {
         out.println("That cell doesn't exist!");
-      } else if (gameBoard.getCell(cell[0], cell[1]) != CellState.BLANK) {
+      } else if (gameBoard.getCell(cell[0], cell[1]) != Cell.BLANK) {
         out.println("That cell has already been played!");
       } else {
         validTurn = true;

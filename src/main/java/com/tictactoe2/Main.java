@@ -28,7 +28,7 @@ public class Main {
 
     GameBoard gameBoard = new GameBoard();
     gameBoard.setSize(size);
-    gameBoard.setSquares(new CellState[size][size]);
+    gameBoard.setSquares(new Cell[size][size]);
 
     List<Player> players = new ArrayList<>();
     players.add(new Player(1, "Player1", "X"));
